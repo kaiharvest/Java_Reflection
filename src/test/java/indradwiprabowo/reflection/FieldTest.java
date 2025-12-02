@@ -20,12 +20,12 @@ public class FieldTest {
     @Test
     void testGetField() throws NoSuchFieldException, IllegalAccessException {
         Class<Person> personClass = Person.class;
+
         Field firstName = personClass.getDeclaredField("firstName");
         firstName.setAccessible(true);
 
         Person person1 = new Person("Indra", "Dwi");
-
-        Object result = (String) firstName.get(person1);
+        Object result = firstName.get(person1);
         System.out.println(result);
 
         Person person2 = new Person("Joko", "Nugroho");
@@ -36,17 +36,18 @@ public class FieldTest {
     @Test
     void testChanges() throws NoSuchFieldException, IllegalAccessException {
         Class<Person> personClass = Person.class;
+
         Field firstName = personClass.getDeclaredField("firstName");
         firstName.setAccessible(true);
 
         Person person = new Person("Budi", "Eko");
 
-        person.setFirstName(person, "Maling"); // person.setFirstName("Maling")
-        System.out.println(person.getFirstName());
+        person.setFirstName("Maling");
+        System.out.println(person.getFirstName()); // output: Maling
 
         Person person2 = new Person("Indra", "Dwi");
-        firstName.set(person2, "Tono"); // person2.setFirstName("Tono")
-        System.out.println(person2.getFirstName());
+        firstName.set(person2, "Tono");
+        System.out.println(person2.getFirstName()); // output: Tono
     }
 
 }

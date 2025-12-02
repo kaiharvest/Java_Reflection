@@ -6,7 +6,6 @@ public class Person {
     private String lastName;
 
     public Person() {
-
     }
 
     public Person(String firstName, String lastName) {
@@ -18,7 +17,7 @@ public class Person {
         return firstName;
     }
 
-    public void setFirstName(Person person, String firstName) {
+    public void setFirstName(String firstName) {
         this.firstName = firstName;
     }
 
@@ -37,5 +36,4 @@ public class Person {
                 ", lastName='" + lastName + '\'' +
                 '}';
     }
-
 }
