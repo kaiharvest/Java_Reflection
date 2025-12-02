@@ -1,6 +1,8 @@
 package indradwiprabowo.reflection;
 
-public class Person {
+import java.io.Serializable;
+
+public class Person implements Nameable, Serializable {
 
     private String firstName;
     private String lastName;

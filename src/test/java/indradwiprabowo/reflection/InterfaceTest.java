@@ -7,7 +7,7 @@ import java.util.Arrays;
 public class InterfaceTest {
 
     @Test
-    void test() {
+    void testClass() {
         Class<Nameable> nameableClass = Nameable.class;
 
         System.out.println(nameableClass.getName());
@@ -17,6 +17,13 @@ public class InterfaceTest {
         System.out.println(Arrays.toString(nameableClass.getDeclaredFields()));
         System.out.println(Arrays.toString(nameableClass.getDeclaredMethods()));
         System.out.println(Arrays.toString(nameableClass.getDeclaredConstructors()));
+    }
+
+    @Test
+    void testSuperInterface() {
+        Class<Person> personClass = Person.class;
+
+        System.out.println(Arrays.toString(personClass.getInterfaces()));
     }
 
 }
