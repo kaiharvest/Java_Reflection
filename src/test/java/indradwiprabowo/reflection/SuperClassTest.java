@@ -9,11 +9,11 @@ public class SuperClassTest {
         Class<Person> personClass = Person.class;
         System.out.println(personClass); // Person
 
-        Class<? super Person> superclass = personClass.getSuperclass();
-        System.out.println(superclass); // Object
+        Class<? super Person> objectClass = personClass.getSuperclass();
+        System.out.println(objectClass); // Object
 
-        Class<? super Person> superclasTop = superclass.getSuperclass();
-        System.out.println(superclasTop); // null
+        Class<? super Person> nullClass = objectClass.getSuperclass();
+        System.out.println(nullClass); // null
     }
 
 }
