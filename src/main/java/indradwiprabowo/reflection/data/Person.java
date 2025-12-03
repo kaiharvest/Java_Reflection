@@ -12,6 +12,16 @@ public class Person implements Nameable, Serializable {
     @NotBlank(allowEmptyString = true)
     private String lastName;
 
+    private int age;
+
+    public int getEge() {
+        return age;
+    }
+
+    public void setEge(int age) {
+        this.age = age;
+    }
+
     public Person() {
     }
 
@@ -41,6 +51,7 @@ public class Person implements Nameable, Serializable {
         return "Person{" +
                 "firstName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +
+                ", age=" + age +
                 '}';
     }
 }
