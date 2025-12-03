@@ -3,6 +3,7 @@ package indradwiprabowo.reflection.data;
 import indradwiprabowo.reflection.annotation.NotBlank;
 
 import java.io.Serializable;
+import java.util.List;
 
 public class Person implements Nameable, Serializable {
 
@@ -13,6 +14,16 @@ public class Person implements Nameable, Serializable {
     private String lastName;
 
     private int age;
+
+    private List<String> hobbies;
+
+    public List<String> getHobbies() {
+        return hobbies;
+    }
+
+    public void setHobbies(List<String> hobbies) {
+        this.hobbies = hobbies;
+    }
 
     public int getEge() {
         return age;
