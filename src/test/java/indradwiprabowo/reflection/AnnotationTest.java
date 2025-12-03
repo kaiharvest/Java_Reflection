@@ -4,7 +4,6 @@ import indradwiprabowo.reflection.data.Person;
 import indradwiprabowo.reflection.validation.Validator;
 import org.junit.jupiter.api.Test;
 
-import java.time.Period;
 
 public class AnnotationTest {
 
