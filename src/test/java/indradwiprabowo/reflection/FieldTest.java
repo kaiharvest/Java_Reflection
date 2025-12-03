@@ -1,5 +1,6 @@
 package indradwiprabowo.reflection;
 
+import indradwiprabowo.reflection.data.Person;
 import org.junit.jupiter.api.Test;
 
 import java.lang.reflect.Field;

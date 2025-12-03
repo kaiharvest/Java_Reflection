@@ -1,10 +1,15 @@
-package indradwiprabowo.reflection;
+package indradwiprabowo.reflection.data;
+
+import indradwiprabowo.reflection.annotation.NotBlank;
 
 import java.io.Serializable;
 
 public class Person implements Nameable, Serializable {
 
+    @NotBlank
     private String firstName;
+
+    @NotBlank(allowEmptyString = true)
     private String lastName;
 
     public Person() {

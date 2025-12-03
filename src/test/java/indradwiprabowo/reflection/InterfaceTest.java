@@ -1,5 +1,7 @@
 package indradwiprabowo.reflection;
 
+import indradwiprabowo.reflection.data.Nameable;
+import indradwiprabowo.reflection.data.Person;
 import org.junit.jupiter.api.Test;
 
 import java.util.Arrays;

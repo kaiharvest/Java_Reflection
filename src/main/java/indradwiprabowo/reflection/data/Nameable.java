@@ -1,4 +1,4 @@
-package indradwiprabowo.reflection;
+package indradwiprabowo.reflection.data;
 
 public interface Nameable {
 
